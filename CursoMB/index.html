@@ -12,6 +12,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="styles.css">
     </head>
 
@@ -58,5 +59,71 @@
                 <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
                 <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
             </section>
+
+            <section class="carrossel">
+                <h2 class="carrossel__titulo">Novos lançamentos</h2>
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/LivroNodejs.svg" alt="Livro de NodeJS"></div>
+                    <div class="swiper-slide"><img src="img/LivroTuning.svg" alt="Livro de Tuning"></div>
+                    <div class="swiper-slide"><img src="img/LivroGuiaFrontEnd.svg" alt="Livro de FrontEnd"></div>
+                    <div class="swiper-slide"><img src="img/LivroUX.svg" alt="Livro de UX"></div>
+                    <div class="swiper-slide"><img src="img/LivroAngular.svg" alt="Livro de Angular"></div>
+                    <div class="swiper-slide"><img src="img/LivroLiderança.svg" alt="Livro de LivroLiderança"></div>
+                    </div>
+                    
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+                <div class="card">
+                    <!-- Esssa vai ser a primeira linha -->
+                    <div class="card__descricao">
+                        <!-- Essa vai ser a primeira coluna -->
+                        <div class="descricao">
+                            <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                            <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+                            <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                        </div>
+                        <!-- Essa vai ser a segunda coluna -->
+                        <img src="img/ImagemIntAngular.svg" alt="Imagem livro Angula">
+                    </div>
+
+                    <!-- Esssa vai ser a segunda linha -->
+                    <div class="card__botoes">
+                        <!-- Vai ficar na primeira coluna -->
+                        <ul class="botoes">
+                            <li class="botoes__item"><img src="img/FavoritosDois.svg" alt="Favoritar o Livro"></li>
+                            <li class="botoes__item"><img src="img/SacolaDois.svg" alt="Colocar no Carrinho"></li>
+                        </ul>
+                        <!-- Vai ficar na segunda coluna -->
+                        <a href="#" class="botoes__ancora">Saiba mais</a>
+                    </div>
+                </div>
+
+            </section>    
+            
+            <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+            <script>
+                const swiper = new Swiper('.swiper', {
+                    //speed: 400,
+                    spaceBetween: 10, //espaço entre os "livros"
+                    slidesPerView: 3,
+
+                    // bolinhas em cima do carrossel
+                    pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    },
+                });
+            </script>
     </body>
 </html>
