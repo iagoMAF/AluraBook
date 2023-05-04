@@ -71,12 +71,12 @@
 
                     <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide"><img src="img/LivroNodejs.svg" alt="Livro de NodeJS"></div>
-                    <div class="swiper-slide"><img src="img/LivroTuning.svg" alt="Livro de Tuning"></div>
-                    <div class="swiper-slide"><img src="img/LivroGuiaFrontEnd.svg" alt="Livro de FrontEnd"></div>
-                    <div class="swiper-slide"><img src="img/LivroUX.svg" alt="Livro de UX"></div>
-                    <div class="swiper-slide"><img src="img/LivroAngular.svg" alt="Livro de Angular"></div>
-                    <div class="swiper-slide"><img src="img/LivroLiderança.svg" alt="Livro de LivroLiderança"></div>
+                        <div class="swiper-slide"><img src="img/LivroNodejs.svg" alt="Livro de NodeJS"></div>
+                        <div class="swiper-slide"><img src="img/LivroTuning.svg" alt="Livro de Tuning"></div>
+                        <div class="swiper-slide"><img src="img/LivroGuiaFrontEnd.svg" alt="Livro de FrontEnd"></div>
+                        <div class="swiper-slide"><img src="img/LivroUX.svg" alt="Livro de UX"></div>
+                        <div class="swiper-slide"><img src="img/LivroAngular.svg" alt="Livro de Angular"></div>
+                        <div class="swiper-slide"><img src="img/LivroLiderança.svg" alt="Livro de LivroLiderança"></div>
                     </div>
                     
                     <!-- If we need navigation buttons -->
@@ -108,13 +108,50 @@
                         <a href="#" class="botoes__ancora">Saiba mais</a>
                     </div>
                 </div>
-
             </section>    
+
+            <section class="carrossel">
+                <h2 class="carrossel__titulo">Mais vendidos</h2>
+
+                <div class="swiper">
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/LivroApacheKafka.svg" alt="Livro de NodeJS"></div>
+                        <div class="swiper-slide"><img src="img/LivroGestao.svg" alt="Livro de Tuning"></div>
+                        <div class="swiper-slide"><img src="img/LivroReactNative.svg" alt="Livro de FrontEnd"></div>
+                        <div class="swiper-slide"><img src="img/LivroMEAN.svg" alt="Livro de NodeJS"></div>
+                    </div>
+                
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+                <div class="card">
+                    <div class="card__descricao">
+                        <div class="descricao">
+                            <img src="img/Estrelinhas.svg" alt="Numero de estrelas da Autora">
+                            <h3 class="descricao__titulo">Autora do Mês</h3>
+                            <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
+                            <p class="descricao__texto">Analista de sistemas e escritora, 
+                            Juliana é especialista em Front-End.</p>
+                        </div>
+                        <img src="img/FotoEscritora.svg" alt="Imagem livro Angula">
+                    </div>
+
+                    <div class="card__botoes">
+                        <ul class="botoes">
+                            <li class="botoes__item"><img src="img/FavoritosDois.svg" alt="Favoritar o Livro"></li>
+                            <li class="botoes__item"><img src="img/SacolaDois.svg" alt="Colocar no Carrinho"></li>
+                        </ul>
+                        <a href="#" class="botoes__ancora">Saiba mais</a>
+                    </div>
+                </div>
+            </section> 
             
             <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
             <script>
                 const swiper = new Swiper('.swiper', {
-                    //speed: 400,
                     spaceBetween: 10, //espaço entre os "livros"
                     slidesPerView: 3,
 
