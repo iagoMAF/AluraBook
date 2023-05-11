@@ -28,3 +28,9 @@
     font-size: 14px;
     font-weight: 640;
 }
+
+@media screen and (min-width: 1024px) {
+    .topicos__titulo {
+        font-size: 24px;
+    }
+}
